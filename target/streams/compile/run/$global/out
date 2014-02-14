@@ -4,6 +4,9 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/target/scala-2.10/classes[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/lucene-join-4.4.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/grizzly-http-server-2.2.16.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jsapi.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/sphinx4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/TIDIGITS_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/hsqldb-1.8.0.10.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/netty-3.2.7.Final.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/frames-2.4.0.jar[0m
@@ -11,6 +14,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/hppc-0.4.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/gremlin-java-2.4.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/commons-collections-3.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/WSJ_8gau_13dCep_8kHz_31mel_200Hz_3500Hz.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/commons-pool-1.6.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/avro-ipc-1.5.3.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/randomizedtesting-runner-2.0.8.jar[0m
@@ -73,6 +77,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/pfl-basic-tools-1.0.0-b001.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/metrics-core-2.1.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jsp-2.1-6.1.14.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/junit-4.8.1.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/antlr-3.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jbcrypt-0.3m.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/zookeeper-3.4.5.jar[0m
@@ -92,6 +97,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/servlet-api-2.5-6.1.14.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/metrics-json-3.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/metrics-jvm-3.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/batch.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/pipes-2.4.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/grizzly-core-2.2.16.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/core-3.1.1.jar[0m
@@ -141,6 +147,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/log4j-1.2.16.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/json-20090211.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/compress-lzf-0.8.4.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/js.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/lucene-sandbox-4.4.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/kfs-0.3.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jackson-core-2.1.2.jar[0m
@@ -155,10 +162,13 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/commons-codec-1.7.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/uuid-3.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/stax-api-1.0.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/ant-contrib-0.6.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jersey-servlet-1.17.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/lucene-spatial-4.4.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/snakeyaml-1.6.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/cassandra-thrift-1.2.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/tags.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/commons-beanutils-core-1.7.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/libthrift-0.7.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/lucene-suggest-4.4.0.jar[0m
@@ -170,6 +180,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/pfl-basic-1.0.0-b001.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jamm-0.2.5.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/titan-lucene-0.4.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jsapi-1.0-base.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jackson-datatype-json-org-2.1.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/pfl-tf-tools-1.0.0-b001.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
@@ -233,4 +244,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/com.codahale.metrics/metrics-core/bundles/metrics-core-3.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/io.spray/spray-json_2.10/jars/spray-json_2.10-1.2.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.5.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m

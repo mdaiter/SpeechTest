@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3577791[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@361ae6e3[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -403,7 +403,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.2!scala-reflect.pom(pom.original) (196ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.2!scala-reflect.pom(pom.original) (175ms)[0m
 [0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scala-lang/scala-reflect/2.10.2/jars/scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.jar[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.2 in public[0m
@@ -782,7 +782,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.tinkerpop#frames;2.4.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.10;2.2.3 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a7ded9a[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.2.3 in sbt-chain[0m
@@ -873,7 +873,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.datastax.cassandra#cassandra-driver-core;2.0.0-rc2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-slf4j_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-slf4j_2.10;2.2.3 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f71bcb4[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.2.3 in sbt-chain[0m
@@ -898,6 +898,49 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.10;1.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-json_2.10;1.2.5 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#spray-json_2.10;1.2.5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.spray#spray-json_2.10;1.2.5[0m
+[0m[[0mdebug[0m] [0m	found io.spray#spray-json_2.10;1.2.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.parboiled#parboiled-scala_2.10;1.1.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.parboiled#parboiled-scala_2.10;1.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.parboiled#parboiled-scala_2.10;1.1.5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.parboiled#parboiled-scala_2.10;1.1.5[0m
+[0m[[0mdebug[0m] [0m	found org.parboiled#parboiled-scala_2.10;1.1.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.parboiled#parboiled-core;1.1.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.parboiled#parboiled-core;1.1.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.parboiled#parboiled-core;1.1.5[0m
+[0m[[0mdebug[0m] [0m	found org.parboiled#parboiled-core;1.1.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [compile][0m
@@ -1422,6 +1465,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [runtime][0m
@@ -1947,6 +2016,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -2475,6 +2570,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
@@ -3002,6 +3123,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [test-internal][0m
@@ -3529,6 +3676,32 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-slf4j_2.10;2.2.3->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-json_2.10;1.2.5->org.parboiled#parboiled-scala_2.10;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.parboiled#parboiled-core;1.1.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.parboiled#parboiled-scala_2.10;1.1.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
@@ -3602,6 +3775,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.2.3!akka-actor_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.datastax.cassandra#cassandra-driver-core;2.0.0-rc2!cassandra-driver-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-slf4j_2.10;2.2.3!akka-slf4j_2.10.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-json_2.10;1.2.5!spray-json_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.tinkerpop.gremlin#gremlin-groovy;2.4.0!gremlin-groovy.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.tinkerpop.gremlin#gremlin-java;2.4.0!gremlin-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.tinkerpop#pipes;2.4.0!pipes.jar[0m
@@ -3657,10 +3831,12 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.codahale.metrics#metrics-core;3.0.1!metrics-core.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-scala_2.10;1.1.5!parboiled-scala_2.10.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.5!parboiled-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 5719ms :: artifacts dl 92ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4327ms :: artifacts dl 94ms[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 compile produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 runtime produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 test produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-test.xml[0m
@@ -3674,5 +3850,5 @@
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 docs produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 pom produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 scala-tool produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (5719ms resolve - 92ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4327ms resolve - 94ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

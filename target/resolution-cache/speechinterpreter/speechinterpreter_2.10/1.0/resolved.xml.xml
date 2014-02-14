@@ -4,7 +4,7 @@
 		module="speechinterpreter_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20140210223911"
+		publication="20140213151051"
 	>
 		<description>
 		speechInterpreter
@@ -40,5 +40,6 @@
 		<dependency org="com.typesafe.akka" name="akka-actor_2.10" rev="2.2.3" conf="compile->default(compile)"/>
 		<dependency org="com.datastax.cassandra" name="cassandra-driver-core" rev="2.0.0-rc2" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-slf4j_2.10" rev="2.2.3" conf="compile->default(compile)"/>
+		<dependency org="io.spray" name="spray-json_2.10" rev="1.2.5" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

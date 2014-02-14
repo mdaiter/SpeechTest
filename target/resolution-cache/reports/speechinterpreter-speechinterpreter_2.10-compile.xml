@@ -7,8 +7,44 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140210223911"/>
+		date="20140213151051"/>
 	<dependencies>
+		<module organisation="io.spray" name="spray-json_2.10">
+			<revision name="1.2.5" status="release" pubdate="20131217033437" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="61">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2826" time="0" location="/home/msd/.ivy2/cache/io.spray/spray-json_2.10/ivy-1.2.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.2.5/spray-json_2.10-1.2.5.pom"/>
+				<caller organisation="speechinterpreter" name="speechinterpreter_2.10" conf="compile" rev="1.2.5" rev-constraint-default="1.2.5" rev-constraint-dynamic="1.2.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-json_2.10" type="jar" ext="jar" status="no" details="" size="321503" time="0" location="/home/msd/.ivy2/cache/io.spray/spray-json_2.10/jars/spray-json_2.10-1.2.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/spray/spray-json_2.10/1.2.5/spray-json_2.10-1.2.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.10">
+			<revision name="1.1.5" status="release" pubdate="20130502103137" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="62">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2946" time="0" location="/home/msd/.ivy2/cache/org.parboiled/parboiled-scala_2.10/ivy-1.1.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.5/parboiled-scala_2.10-1.1.5.pom"/>
+				<caller organisation="io.spray" name="spray-json_2.10" conf="default, compile, runtime, master" rev="1.1.5" rev-constraint-default="1.1.5" rev-constraint-dynamic="1.1.5" callerrev="1.2.5"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.10" type="bundle" ext="jar" status="no" details="" size="238111" time="0" location="/home/msd/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.10/1.1.5/parboiled-scala_2.10-1.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.5" status="release" pubdate="20130502103037" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="63">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/msd/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.5/parboiled-core-1.1.5.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="1.1.5" rev-constraint-default="1.1.5" rev-constraint-dynamic="1.1.5" callerrev="1.1.5"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="bundle" ext="jar" status="no" details="" size="186418" time="0" location="/home/msd/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.5/parboiled-core-1.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.akka" name="akka-slf4j_2.10">
 			<revision name="2.2.3" status="release" pubdate="20131023043726" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="60">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -387,7 +423,7 @@
 			<revision name="2.10.2" status="release" pubdate="20130606140608" resolver="public" artresolver="public" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.2/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="35">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html
 			"/>
-				<metadata-artifact status="successful" details="" size="1941" time="196" location="/home/msd/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.2.xml" searched="true" original-local-location="/home/msd/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom"/>
+				<metadata-artifact status="successful" details="" size="1941" time="175" location="/home/msd/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.2.xml" searched="true" original-local-location="/home/msd/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.2.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.10.2"/>
 				<caller organisation="com.michaelpollmeier" name="gremlin-scala" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.4.1"/>
 				<artifacts>
@@ -799,13 +835,22 @@
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.3"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.10.2"/>
 				<caller organisation="speechinterpreter" name="speechinterpreter_2.10" conf="compile" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0"/>
+				<caller organisation="io.spray" name="spray-json_2.10" conf="default, compile, runtime, master" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.2.5"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.10.2"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.2.3"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.1.5"/>
 				<caller organisation="com.michaelpollmeier" name="gremlin-scala" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.4.1"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126003" time="0" location="/home/msd/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.10.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="-1">
+				<evicted-by rev="2.10.3"/>
+				<caller organisation="io.spray" name="spray-json_2.10" conf="default, compile, runtime, master" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.2.5"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.10" conf="compile, runtime" rev="2.10.1" rev-constraint-default="2.10.1" rev-constraint-dynamic="2.10.1" callerrev="1.1.5"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 			<revision name="2.10.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, default(compile), default" position="-1">

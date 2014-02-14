@@ -6,13 +6,15 @@ import org.apache.commons.configuration.Configuration;
 import com.tinkerpop.blueprints.{Edge, Vertex, Graph};
 import com.tinkerpop.frames.{FramedTransactionalGraph, FramedGraphFactory}
 import com.tinkerpop.frames.modules.gremlingroovy.GremlinGroovyModule
+import com.tinkerpop.blueprints.util.wrappers.event.EventGraph
 import scala.collection.JavaConverters._
 
 class TitanGraphActor extends Actor with akka.actor.ActorLogging{
     protected val conf : Configuration = new BaseConfiguration();
     protected var graph : TitanGraph = null
     protected var framedGraph : FramedTransactionalGraph[TitanGraph] = null
-
+    protected var eventGraph : EventGraph[TitanGraph] = null
+    
     override def preStart(): Unit = {
         conf.setProperty("storage.backend", "cassandra")
         conf.setProperty("storage.hostname", "127.0.0.1")
@@ -20,8 +22,9 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
 
         //Make framed graph + factory
         resetFramedGraph
+        eventGraph = new EventGraph(graph)
     }
-    private def resetFramedGraph = {
+    protected def resetFramedGraph = {
         val framedFactory : FramedGraphFactory = new FramedGraphFactory(new GremlinGroovyModule())
         framedGraph = framedFactory.create(graph)
     }
