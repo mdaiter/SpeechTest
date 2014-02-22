@@ -4,6 +4,7 @@ import com.tinkerpop.blueprints.util.wrappers.event.EventGraph
 import com.tinkerpop.blueprints.util.wrappers.event.listener.GraphChangedListener
 import com.thinkaurelius.titan.core.{TitanGraph}
 import com.tinkerpop.blueprints.{Edge, Vertex}
+
 class RoomModuleActor(n : String, tModule : String, v : Int) extends TitanGraphActor with akka.actor.ActorLogging{
     protected val name : String = n
     protected val typeModule : String = tModule
@@ -13,7 +14,7 @@ class RoomModuleActor(n : String, tModule : String, v : Int) extends TitanGraphA
             val nameOfVertexChanged : String = vertex.getProperty("name").asInstanceOf[String]
             val typeOfVertexChanged : String = vertex.getProperty("value").asInstanceOf[String]
             if (nameOfVertexChanged == name && typeOfVertexChanged == typeModule){
-                value = vertex.getProperty("value")
+                value = vertex.getProperty("value").asInstanceOf[Int]
             }
         }
         def vertexRemoved(vertex : Vertex, map : java.util.Map[String, Object]) = {
@@ -45,5 +46,10 @@ class RoomModuleActor(n : String, tModule : String, v : Int) extends TitanGraphA
         //Set the eventgraph to the graph
         eventGraph = new EventGraph[TitanGraph](graph)
         eventGraph.addListener(new RoomModuleEventListener())
+    }
+    
+    override def receive = {
+        case _ =>
+            sender ! false
     }
 }

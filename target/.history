@@ -1,1 +1,11 @@
 show managed-classpath
+compile
+sbt run
+run
+compile
+run
+compile
+run
+compile
+compil;e
+compile

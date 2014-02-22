@@ -9,6 +9,12 @@ trait Person{
     @Property("type")
     def getType : String;
 
+    @Property("positionX")
+    def positionX : Int;
+
+    @Property("positionY")
+    def positionY : Int;
+
     @Adjacency(label="horomones")
     def getHormoneBase : HormoneBase;
 

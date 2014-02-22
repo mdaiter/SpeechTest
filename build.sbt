@@ -26,4 +26,6 @@ libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.2.3"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-slf4j" % "2.2.3"
 
+libraryDependencies += "io.argonaut" %% "argonaut" % "6.0.2"
+
 libraryDependencies += "io.spray" %% "spray-json" % "1.2.5"

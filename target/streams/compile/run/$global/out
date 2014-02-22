@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mRunning Main [0m
+[0m[[0minfo[0m] [0mRunning AkkaIOTestSupervisor [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/target/scala-2.10/classes[0m
@@ -64,6 +64,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/avro-1.4.0-cassandra-1.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/hbase-0.94.12.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jetty-6.1.26.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/gpio-jni-1.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/rexster-server-2.4.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jackson-xc-1.9.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jets3t-0.7.1.jar[0m
@@ -89,6 +90,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/ant-launcher-1.8.3.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jasper-compiler-5.5.23.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/elasticsearch-0.90.5.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/gpio-api-1.0.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jettison-1.3.3.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/grizzly-http-servlet-2.2.16.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/metrics-graphite-3.0.0-BETA3.jar[0m
@@ -113,6 +115,7 @@
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/javax.servlet-api-3.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/grizzly-framework-2.2.16.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/lucene-misc-4.4.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/buildSrc.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/ivy-2.3.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/jersey-json-1.17.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/Code/testScala/lib/commons-logging-1.1.1.jar[0m
@@ -244,7 +247,13 @@
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/com.codahale.metrics/metrics-core/bundles/metrics-core-3.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.3.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/io.argonaut/argonaut_2.10/jars/argonaut_2.10-6.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.0.5.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/io.spray/spray-json_2.10/jars/spray-json_2.10-1.2.5.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.5.jar[0m
 [0m[[0mdebug[0m] [0m	/home/msd/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.5.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread PiSystem-akka.actor.default-dispatcher-2 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread PiSystem-akka.actor.default-dispatcher-2 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread PiSystem-scheduler-1 to terminate.[0m
