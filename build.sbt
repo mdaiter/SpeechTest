@@ -28,4 +28,6 @@ libraryDependencies += "com.typesafe.akka" %% "akka-slf4j" % "2.2.3"
 
 libraryDependencies += "io.argonaut" %% "argonaut" % "6.0.2"
 
+libraryDependencies += "com.github.jodersky" %% "flow" % "1.1.0"
+
 libraryDependencies += "io.spray" %% "spray-json" % "1.2.5"

@@ -105,10 +105,13 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
         //setup nodes for person to link to
         var personHormoneNode = graph.addVertex(null)
         var personWeightNode = graph.addVertex(null)
+        val personPreferencesNode = graph.addVertex(null)
         personHormoneNode.setProperty("name", name++"Horomones")
         personWeightNode.setProperty("name", name++"Weight")
+        personPreferencesNode.setProperty("name", name++"Preferences")
         graph.addEdge(null, newPerson, personHormoneNode, "horomones")
         graph.addEdge(null, newPerson, personWeightNode, "weight")
+        graph.addEdge(null, newPerson, personPreferencesNode, "preferences")
         graph.commit()
     }
 

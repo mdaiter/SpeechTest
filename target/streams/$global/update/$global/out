@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for speechinterpreter#speechinterpreter_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d3a3e7[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21f54e49[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -394,19 +394,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scala-lang/scala-reflect/2.10.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-reflect;2.10.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-reflect;2.10.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom (2.10.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.2!scala-reflect.pom(pom.original) (357ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scala-lang/scala-reflect/2.10.2/jars/scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.2 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.10.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.2] org.scala-lang#scala-reflect;2.10.2[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
@@ -782,7 +772,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.tinkerpop#frames;2.4.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c6dd45e[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@fc1466c[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.2.3 in sbt-chain[0m
@@ -873,7 +863,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.datastax.cassandra#cassandra-driver-core;2.0.0-rc2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-slf4j_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4697be60[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c709170[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.2.3 in sbt-chain[0m
@@ -901,19 +891,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.argonaut#argonaut_2.10;6.0.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.argonaut#argonaut_2.10;6.0.2 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/io.argonaut/argonaut_2.10/6.0.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for io.argonaut#argonaut_2.10;6.0.2[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for io.argonaut#argonaut_2.10;6.0.2[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.pom (6.0.2)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.argonaut#argonaut_2.10;6.0.2!argonaut_2.10.pom(pom.original) (145ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/io.argonaut/argonaut_2.10/6.0.2/jars/argonaut_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.jar[0m
-[0m[[0mdebug[0m] [0m	found io.argonaut#argonaut_2.10;6.0.2 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.argonaut#argonaut_2.10;6.0.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.argonaut#argonaut_2.10;6.0.2[0m
+[0m[[0mdebug[0m] [0m	found io.argonaut#argonaut_2.10;6.0.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.argonaut#argonaut_2.10;6.0.2->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
@@ -923,19 +903,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.argonaut#argonaut_2.10;6.0.2->org.scalaz#scalaz-core_2.10;7.0.5 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.10;7.0.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.10;7.0.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scalaz/scalaz-core_2.10/7.0.5/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalaz#scalaz-core_2.10;7.0.5[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scalaz#scalaz-core_2.10;7.0.5[0m
-[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.pom (7.0.5)[0m
-[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalaz#scalaz-core_2.10;7.0.5!scalaz-core_2.10.pom(pom.original) (551ms)[0m
-[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scalaz/scalaz-core_2.10/7.0.5/bundles/scalaz-core_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.10;7.0.5 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.10;7.0.5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scalaz#scalaz-core_2.10;7.0.5[0m
+[0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.10;7.0.5 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.argonaut#argonaut_2.10;6.0.2->org.scalaz#scalaz-core_2.10;7.0.5 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
@@ -950,6 +920,79 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.github.jodersky#flow_2.10;1.1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.jodersky#flow_2.10;1.1.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.jodersky#flow_2.10;1.1.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.github.jodersky#flow_2.10;1.1.0[0m
+[0m[[0mdebug[0m] [0m	found com.github.jodersky#flow_2.10;1.1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.scala-incubator.io#scala-io-core_2.10;0.4.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.github.scala-incubator.io#scala-io-core_2.10;0.4.2[0m
+[0m[[0mdebug[0m] [0m	found com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.jsuereth#scala-arm_2.10;1.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.jsuereth#scala-arm_2.10;1.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.jsuereth#scala-arm_2.10;1.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.jsuereth#scala-arm_2.10;1.3[0m
+[0m[[0mdebug[0m] [0m	found com.jsuereth#scala-arm_2.10;1.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.scala-incubator.io#scala-io-file_2.10;0.4.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.github.scala-incubator.io#scala-io-file_2.10;0.4.2[0m
+[0m[[0mdebug[0m] [0m	found com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.spray#spray-json_2.10;1.2.5 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#spray-json_2.10;1.2.5 {compile=[default(compile)]}[0m
@@ -1539,6 +1582,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
@@ -2112,6 +2204,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
@@ -2688,6 +2829,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
@@ -3263,6 +3453,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
@@ -3838,6 +4077,55 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.10;7.0.5->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.argonaut#argonaut_2.10;6.0.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-core_2.10;0.4.2->com.jsuereth#scala-arm_2.10;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.jsuereth#scala-arm_2.10;1.3->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.jodersky#flow_2.10;1.1.0->com.github.scala-incubator.io#scala-io-file_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->com.github.scala-incubator.io#scala-io-core_2.10;0.4.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scala-incubator.io#scala-io-file_2.10;0.4.2->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->com.github.jodersky#flow_2.10;1.1.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies speechinterpreter#speechinterpreter_2.10;1.0->io.spray#spray-json_2.10;1.2.5 [compile->compile][0m
@@ -3937,12 +4225,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.2.3!akka-actor_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.datastax.cassandra#cassandra-driver-core;2.0.0-rc2!cassandra-driver-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-slf4j_2.10;2.2.3!akka-slf4j_2.10.jar(bundle)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/io/argonaut/argonaut_2.10/6.0.2/argonaut_2.10-6.0.2.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.argonaut#argonaut_2.10;6.0.2!argonaut_2.10.jar (439ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.argonaut#argonaut_2.10;6.0.2!argonaut_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.jodersky#flow_2.10;1.1.0!flow_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-json_2.10;1.2.5!spray-json_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.tinkerpop.gremlin#gremlin-groovy;2.4.0!gremlin-groovy.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.tinkerpop.gremlin#gremlin-java;2.4.0!gremlin-java.jar[0m
@@ -3999,18 +4283,16 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.codahale.metrics#metrics-core;3.0.1!metrics-core.jar(bundle)[0m
-[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.jar[0m
-[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.10/7.0.5/scalaz-core_2.10-7.0.5.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalaz#scalaz-core_2.10;7.0.5!scalaz-core_2.10.jar(bundle) (1754ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalaz#scalaz-core_2.10;7.0.5!scalaz-core_2.10.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.scala-incubator.io#scala-io-core_2.10;0.4.2!scala-io-core_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.scala-incubator.io#scala-io-file_2.10;0.4.2!scala-io-file_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.jsuereth#scala-arm_2.10;1.3!scala-arm_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-scala_2.10;1.1.5!parboiled-scala_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.5!parboiled-core.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 7799ms :: artifacts dl 2298ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4201ms :: artifacts dl 88ms[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 compile produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 runtime produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 test produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-test.xml[0m
@@ -4024,5 +4306,5 @@
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 docs produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 pom produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for speechinterpreter#speechinterpreter_2.10;1.0 scala-tool produced in /home/msd/Code/testScala/target/resolution-cache/reports/speechinterpreter-speechinterpreter_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (7799ms resolve - 2298ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (4201ms resolve - 88ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

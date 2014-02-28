@@ -19,7 +19,6 @@ class ChairActor extends Actor {
     def receive = {
         case json : String =>
             val chair : Option[Chair] = json.decodeOption[Chair]
-            
-            println(chair.get.inputOptions.get.pressure)
+            sender ! chair
     }
 }

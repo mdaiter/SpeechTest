@@ -3,20 +3,19 @@ import edu.cmu.sphinx.recognizer.Recognizer;
 import edu.cmu.sphinx.result.Result;
 import edu.cmu.sphinx.util.props.ConfigurationManager;
 
-import akka.actor.{Actor, Props, ActorSystem};
+import akka.actor.{Actor, Props, ActorSystem, ActorRef};
 import akka.event.Logging;
 
 class SpeechActor extends Actor with akka.actor.ActorLogging{
-
-    private var cm : ConfigurationManager = new ConfigurationManager(getClass.getResource("helloworld.config.xml"));
-    private var recognizer : Recognizer = cm.lookup("recognizer").asInstanceOf[Recognizer];
-    private var mic : Microphone = cm.lookup("microphone").asInstanceOf[Microphone];
+    import context.system;
+    private var cm : ConfigurationManager = new ConfigurationManager(getClass.getResource("/helloworld.config.xml"));
+    private var recognizer : Recognizer = cm.lookup("recognizer").asInstanceOf[Recognizer]
+    private var mic : Microphone = cm.lookup("microphone").asInstanceOf[Microphone]
     private var lastString : String = new String();
     private def start : Boolean = {
         /*
         * Instantiate variables
         */
-
         recognizer.allocate();
         if (!mic.startRecording()){
             recognizer.deallocate();
@@ -41,10 +40,20 @@ class SpeechActor extends Actor with akka.actor.ActorLogging{
             return null;
         }
     }
-
+    def loop (sender : ActorRef) = {
+        while (true) {
+            log.info("Starting to log mic info")
+            mic.clear
+            val result : Result = recognizer.recognize
+            if (result != null){
+                sender ! result.getBestFinalResultNoFiller
+            }
+        }
+    }
     def receive = {
         case "start" =>
-            sender ! start;
+            sender ! start
+            loop(sender)
         case "get" =>
             log.info("received get function");
             mic.clear();
@@ -63,8 +72,11 @@ class SpeechActor extends Actor with akka.actor.ActorLogging{
 }
 
 object Speech extends App{
-    val system = ActorSystem("Speech")
+    val system = ActorSystem("mySystem")
     val helloWorldActor = system.actorOf(Props[WitAIActor])
+    val udpInterpreter = system.actorOf(Props[UDPReceiver])
+    val camActor = system.actorOf(Props(new UDPActor(8008, udpInterpreter)), name="FaceActor")
+    val arduinoActor = system.actorOf(Props ( new ArduinoActor("/dev/ttyACM0")), name="Arduino")
     printf("Input a string you want analyzed.\n>")
     while(true){
         var read : String = readLine

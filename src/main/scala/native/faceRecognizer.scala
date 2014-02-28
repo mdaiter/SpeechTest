@@ -28,8 +28,7 @@ class FaceRecognizerSupervisor extends Actor with akka.actor.ActorLogging{
 }
 
 class FaceReceiver extends Actor with ActorLogging {
-    import context.system
-    val jsonHandler = system.actorOf(Props[FaceJsonActor], name = "FaceActor")
+    import context.system;
     val chairX = 300
     val chairWidth = 50
     val chairY = 300
@@ -37,7 +36,7 @@ class FaceReceiver extends Actor with ActorLogging {
     def receive = {
         case Received(data, from) => 
             log.info("Received a UDP Packet {} sent from {}", data.utf8String, from)
-            jsonHandler ! ("inBounds", data.utf8String, chairX, chairY, chairWidth, chairHeight)
+            //jsonHandler ! ("inBounds", data.utf8String, chairX, chairY, chairWidth, chairHeight)
         case _ => 
     }
 }

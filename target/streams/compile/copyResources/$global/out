@@ -1,2 +1,5 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	[0m
+[0m[[0mdebug[0m] [0m	(/home/msd/Code/testScala/src/main/resources/WSJ_8gau_13dCep_8kHz_31mel_200Hz_3500Hz.jar,/home/msd/Code/testScala/target/scala-2.10/classes/WSJ_8gau_13dCep_8kHz_31mel_200Hz_3500Hz.jar)[0m
+[0m[[0mdebug[0m] [0m	(/home/msd/Code/testScala/src/main/resources/helloworld.config.xml,/home/msd/Code/testScala/target/scala-2.10/classes/helloworld.config.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/msd/Code/testScala/src/main/resources/hello.gram,/home/msd/Code/testScala/target/scala-2.10/classes/hello.gram)[0m
+[0m[[0mdebug[0m] [0m	(/home/msd/Code/testScala/src/main/resources/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar,/home/msd/Code/testScala/target/scala-2.10/classes/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar)[0m
