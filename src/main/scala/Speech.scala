@@ -8,7 +8,7 @@ import akka.event.Logging;
 
 class SpeechActor extends Actor with akka.actor.ActorLogging{
     import context.system;
-    private var cm : ConfigurationManager = new ConfigurationManager(getClass.getResource("/helloworld.config.xml"));
+    private val cm : ConfigurationManager = new ConfigurationManager(getClass.getResource("/helloworld.config.xml"));
     private var recognizer : Recognizer = cm.lookup("recognizer").asInstanceOf[Recognizer]
     private var mic : Microphone = cm.lookup("microphone").asInstanceOf[Microphone]
     private var lastString : String = new String();
@@ -17,10 +17,13 @@ class SpeechActor extends Actor with akka.actor.ActorLogging{
         * Instantiate variables
         */
         recognizer.allocate();
+        mic = cm.lookup("microphone").asInstanceOf[Microphone]
         if (!mic.startRecording()){
+            println("Didn't hit here")
             recognizer.deallocate();
             return false;
         }
+        println("Hit here!")
         return true;
     }
     private def stop : Boolean = {
@@ -43,16 +46,21 @@ class SpeechActor extends Actor with akka.actor.ActorLogging{
     def loop (sender : ActorRef) = {
         while (true) {
             log.info("Starting to log mic info")
-            mic.clear
+            //mic.clear
             val result : Result = recognizer.recognize
             if (result != null){
-                sender ! result.getBestFinalResultNoFiller
+                val micRead = result.getBestFinalResultNoFiller
+                log.info("Got new mic reading: " ++ micRead)
+                sender ! micRead
+            }
+            else{
+                log.info("I think I misheard you...")
             }
         }
     }
     def receive = {
         case "start" =>
-            sender ! start
+            this.start
             loop(sender)
         case "get" =>
             log.info("received get function");

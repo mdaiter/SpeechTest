@@ -1,8 +1,12 @@
-name := "speechInterpreter"
+name := "testScala"
 
 version := "1.0"
 
 scalaVersion := "2.10.3"
+
+connectInput in run := true
+
+fork in run := true
 
 resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 

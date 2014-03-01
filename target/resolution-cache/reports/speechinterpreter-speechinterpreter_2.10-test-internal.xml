@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20140225222233"/>
+		date="20140228021649"/>
 	<dependencies>
 		<module organisation="io.spray" name="spray-json_2.10">
 			<revision name="1.2.5" status="release" pubdate="20131217033437" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="67">

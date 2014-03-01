@@ -34,7 +34,6 @@ class WitJSONActor extends Actor  with akka.actor.ActorLogging{
         } else {null}
         println(appliance)
         
-        val house_adjust_up_down : String = entities.get("house_adjust_up_down").asObject().get("value").asString()
         ("house_adjust", appliance, isOnOrOff )
     }
 

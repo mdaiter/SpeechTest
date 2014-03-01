@@ -186,7 +186,7 @@
 
     <component name="speechClassifier"
                type="edu.cmu.sphinx.frontend.endpoint.SpeechClassifier">
-        <property name="threshold" value="13"/>
+        <property name="threshold" value="10"/>
     </component>
 
     <component name="nonSpeechDataFilter"
@@ -223,8 +223,12 @@
                type="edu.cmu.sphinx.frontend.feature.DeltasFeatureExtractor"/>
 
     <component name="microphone"
-               type="edu.cmu.sphinx.frontend.util.Microphone">
-               <property name="closeBetweenUtterances" value="true"/>
+        type="edu.cmu.sphinx.frontend.util.Microphone">
+        <property name="signed" value="true" />
+        <property name="bigEndian" value="false"/>
+        <property name="selectMixer" value="8" />
+        <property name="channels" value="2" />
+        <property name="sampleRate" value="32000" />
     </component>
 
 

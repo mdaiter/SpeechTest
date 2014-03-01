@@ -6,9 +6,8 @@
 
 grammar hello;
 
-public <basicCmd> = <startPolite> <command> <endPolite>;
+public <basicCmd> = <command> <endPolite>;
 <command> = <action> <object>;
-<action> = (turn on | turn off | turn up | turn down);
-<object> = [the | a] (light one| light two);
-<startPolite> = (please | house | could you) *;
+<action> = (turn on | turn off | turn up | turn down | save);
+<object> = [my] (light one| light two | prefs);
 <endPolite> = [thanks | thank you | please];
