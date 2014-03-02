@@ -83,6 +83,7 @@ class ArduinoActor(portName : String) extends Actor with akka.actor.ActorLogging
         val pinNum : Int = attrToPin.get(attribute).get
         val jsonPinObject : JsonObject = new JsonObject().add(pinNum.toString, newVal)
         val jsonObject : JsonObject = new JsonObject().add("pwm", jsonPinObject)
+        system.actorFor("akka://mySystem/user/SynthActor") ! "Adjusting "++attribute
         ByteString.fromString(jsonObject.toString())
     }
     def genJSONSend(attributes : ParVector[String], newVals : ParVector[Int]) : ByteString = {

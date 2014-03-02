@@ -1,81 +1,33 @@
 [0m[[0minfo[0m] [0mRunning Main [0m
 [0m[[0minfo[0m] [0m>Hit here![0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:30.101] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:31.678] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Got new mic reading: [0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:31.679] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
-[0m[[0minfo[0m] [0m[ERROR] [03/02/2014 01:52:32.519] [mySystem-akka.actor.default-dispatcher-2] [akka://mySystem/user/WitAIActor] Server returned HTTP response code: 400 for URL: https://api.wit.ai/message?q=[0m
-[0m[[0minfo[0m] [0mjava.io.IOException: Server returned HTTP response code: 400 for URL: https://api.wit.ai/message?q=[0m
-[0m[[0minfo[0m] [0m	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1626)[0m
-[0m[[0minfo[0m] [0m	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)[0m
-[0m[[0minfo[0m] [0m	at WitAIActor.WitAIActor$$send(Wit.scala:26)[0m
-[0m[[0minfo[0m] [0m	at WitAIActor$$anonfun$receive$1.applyOrElse(Wit.scala:55)[0m
-[0m[[0minfo[0m] [0m	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:498)[0m
-[0m[[0minfo[0m] [0m	at akka.actor.ActorCell.invoke(ActorCell.scala:456)[0m
-[0m[[0minfo[0m] [0m	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:237)[0m
-[0m[[0minfo[0m] [0m	at akka.dispatch.Mailbox.run(Mailbox.scala:219)[0m
-[0m[[0minfo[0m] [0m	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)[0m
-[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)[0m
-[0m[[0minfo[0m] [0m[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:37.588] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Got new mic reading: get matt preferences[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:37.588] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
+[0m[[0minfo[0m] [0m[INFO] [03/02/2014 15:16:20.228] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
+[0m[[0minfo[0m] [0m[INFO] [03/02/2014 15:16:23.538] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Got new mic reading: turn on light two[0m
+[0m[[0minfo[0m] [0m[INFO] [03/02/2014 15:16:23.538] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
 [0m[[0minfo[0m] [0m{[0m
-[0m[[0minfo[0m] [0m  "msg_id" : "e84e1bf5-dfc2-4a11-9266-c0a8632e0f80",[0m
-[0m[[0minfo[0m] [0m  "msg_body" : "get matt preferences",[0m
-[0m[[0minfo[0m] [0m  "outcome" : {[0m
-[0m[[0minfo[0m] [0m    "intent" : "get_prefs",[0m
-[0m[[0minfo[0m] [0m    "entities" : {[0m
-[0m[[0minfo[0m] [0m      "contact" : {[0m
-[0m[[0minfo[0m] [0m        "end" : 8,[0m
-[0m[[0minfo[0m] [0m        "start" : 4,[0m
-[0m[[0minfo[0m] [0m        "value" : "matt",[0m
-[0m[[0minfo[0m] [0m        "body" : "matt",[0m
-[0m[[0minfo[0m] [0m        "suggested" : true[0m
-[0m[[0minfo[0m] [0m      }[0m
-[0m[[0minfo[0m] [0m    },[0m
-[0m[[0minfo[0m] [0m    "confidence" : 0.979[0m
-[0m[[0minfo[0m] [0m  }[0m
-[0m[[0minfo[0m] [0m}[0m
-[0m[[0minfo[0m] [0mget_prefs[0m
-[0m[[0minfo[0m] [0m{"contact":{"end":8,"start":4,"value":"matt","body":"matt","suggested":true}}[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:37.908] [mySystem-akka.actor.default-dispatcher-3] [akka://mySystem/user/TitanActor] Getting prefs for Matt[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.056] [mySystem-akka.actor.default-dispatcher-3] [akka://mySystem/user/TitanActor] v[120016][0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.103] [mySystem-akka.actor.default-dispatcher-3] [akka://mySystem/user/TitanActor] Result from getPrefs: ParVector(1, 1)[0m
-[0m[[0minfo[0m] [0mResult was: (house_adjust,ParVector(light one, light two),ParVector(1, 1))[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.105] [mySystem-akka.actor.default-dispatcher-9] [akka://mySystem/user/$f] Received prefs(house_adjust,ParVector(light one, light two),ParVector(1, 1))[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.262] [mySystem-akka.actor.default-dispatcher-5] [akka://mySystem/user/ArduinoController/$a] light two1[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.262] [mySystem-akka.actor.default-dispatcher-2] [akka://mySystem/user/ArduinoController/$a] light one1[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.262] [mySystem-akka.actor.default-dispatcher-3] [akka://mySystem/user/$d/$a] Received[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:38.264] [mySystem-akka.actor.default-dispatcher-3] [akka://mySystem/user/$d/$a] Received[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:42.175] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Got new mic reading: get light two[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:42.176] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
-[0m[[0minfo[0m] [0m{[0m
-[0m[[0minfo[0m] [0m  "msg_id" : "043d4fcd-20de-4583-a25d-807462bd6f51",[0m
-[0m[[0minfo[0m] [0m  "msg_body" : "get light two",[0m
+[0m[[0minfo[0m] [0m  "msg_id" : "171b2fe4-51b6-4645-a2a9-cc5bfaa568ca",[0m
+[0m[[0minfo[0m] [0m  "msg_body" : "turn on light two",[0m
 [0m[[0minfo[0m] [0m  "outcome" : {[0m
 [0m[[0minfo[0m] [0m    "intent" : "house_adjust",[0m
 [0m[[0minfo[0m] [0m    "entities" : {[0m
 [0m[[0minfo[0m] [0m      "appliances" : {[0m
-[0m[[0minfo[0m] [0m        "end" : 13,[0m
-[0m[[0minfo[0m] [0m        "start" : 4,[0m
-[0m[[0minfo[0m] [0m        "value" : "light two",[0m
-[0m[[0minfo[0m] [0m        "body" : "light two"[0m
+[0m[[0minfo[0m] [0m        "value" : "light two"[0m
+[0m[[0minfo[0m] [0m      },[0m
+[0m[[0minfo[0m] [0m      "thermostat_up_down" : {[0m
+[0m[[0minfo[0m] [0m        "end" : 17,[0m
+[0m[[0minfo[0m] [0m        "start" : 0,[0m
+[0m[[0minfo[0m] [0m        "value" : "down",[0m
+[0m[[0minfo[0m] [0m        "body" : "turn on light two"[0m
 [0m[[0minfo[0m] [0m      },[0m
 [0m[[0minfo[0m] [0m      "on_off" : {[0m
 [0m[[0minfo[0m] [0m        "value" : "on"[0m
-[0m[[0minfo[0m] [0m      },[0m
-[0m[[0minfo[0m] [0m      "house_adjust_up_down" : {[0m
-[0m[[0minfo[0m] [0m        "value" : "up"[0m
 [0m[[0minfo[0m] [0m      }[0m
 [0m[[0minfo[0m] [0m    },[0m
-[0m[[0minfo[0m] [0m    "confidence" : 0.978[0m
+[0m[[0minfo[0m] [0m    "confidence" : 1.0[0m
 [0m[[0minfo[0m] [0m  }[0m
 [0m[[0minfo[0m] [0m}[0m
 [0m[[0minfo[0m] [0mhouse_adjust[0m
-[0m[[0minfo[0m] [0m{"appliances":{"end":13,"start":4,"value":"light two","body":"light two"},"on_off":{"value":"on"},"house_adjust_up_down":{"value":"up"}}[0m
+[0m[[0minfo[0m] [0m{"appliances":{"value":"light two"},"thermostat_up_down":{"end":17,"start":0,"value":"down","body":"turn on light two"},"on_off":{"value":"on"}}[0m
 [0m[[0minfo[0m] [0mlight two[0m
 [0m[[0minfo[0m] [0mResult was: (house_adjust,light two,255)[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:42.476] [mySystem-akka.actor.default-dispatcher-2] [akka://mySystem/user/ArduinoController/$a] Adjusting a few things...[0m
-[0m[[0minfo[0m] [0m[INFO] [03/02/2014 01:52:42.477] [mySystem-akka.actor.default-dispatcher-2] [akka://mySystem/user/$d/$a] Received[0m
+[0m[[0minfo[0m] [0m[INFO] [03/02/2014 15:16:24.404] [mySystem-akka.actor.default-dispatcher-6] [akka://mySystem/user/ArduinoController/$a] Adjusting a few things...[0m
+[0m[[0minfo[0m] [0m[INFO] [03/02/2014 15:16:24.404] [mySystem-akka.actor.default-dispatcher-6] [akka://mySystem/user/$d/$a] Received[0m

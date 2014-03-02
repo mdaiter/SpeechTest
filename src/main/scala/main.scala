@@ -27,7 +27,7 @@ object Main {
         val udpActor = system.actorOf(Props(new UDPActorSupervisor(8008, udpReceiverActor)))
         val arduinoControllerActor = system.actorOf(Props[ArduinoControllerActorSupervisor], name="ArduinoController")
         val arduinoActor = system.actorOf(Props (new ArduinoActorSupervisor("/dev/ttyACM0")))
-        
+        val synthActor = system.actorOf(Props[SpeechSynthActor], "SynthActor")
         witActor ! micActor
         
         udpActor ! "connect"
