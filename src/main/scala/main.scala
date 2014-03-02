@@ -34,11 +34,13 @@ object Main {
 
         arduinoActor ! ("set_pin", "light one", 8)
         arduinoActor ! ("set_pin", "light two", 9)
-        arduinoActor ! ("set_pin", "MattPreferenceslight one", 8)
-        arduinoActor ! ("set_pin", "MattPreferenceslight two", 9)
+        //arduinoActor ! ("set_pin", "MattPreferenceslight one", 8)
+        //arduinoActor ! ("set_pin", "MattPreferenceslight two", 9)
 
         arduinoControllerActor ! ("light one", arduinoActor)
         arduinoControllerActor ! ("light two", arduinoActor)
+        //arduinoControllerActor ! ("MattPreferenceslight one", arduinoActor)
+        //arduinoControllerActor ! ("MattPreferenceslight two", arduinoActor)
         while (true){
             print(">")
             witActor ! readLine

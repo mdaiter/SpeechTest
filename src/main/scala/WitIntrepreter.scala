@@ -7,6 +7,7 @@ import akka.util.Timeout
 import scala.concurrent.duration._
 import akka.pattern.ask
 import scala.concurrent.Await
+import scala.collection.parallel.immutable.ParVector
 class WitJSONActor extends Actor  with akka.actor.ActorLogging{
     import context.system
     def receive = {
@@ -59,9 +60,12 @@ class WitJSONActor extends Actor  with akka.actor.ActorLogging{
 
         val value : Int = entities.get("level").asObject().get("value").asInt
         */
-        implicit val timeout = Timeout(1 seconds)
+        /*implicit val timeout = Timeout(3 seconds)
         val futureGetName = system.actorFor("akka://mySystem/user/FaceActor") ? "getNames"
-        val faces = Await.result(futureGetName, timeout.duration)
-        ("set_prefs", faces)
+        val faces = Await.result(futureGetName, timeout.duration)*/
+
+       val face : ParVector[String] = new ParVector[String] :+ entities.get("contact").asObject.get("value").asString
+        
+       ("set_prefs", face)
     }
 }

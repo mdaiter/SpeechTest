@@ -103,8 +103,8 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
         log.info("Setting prefs")
         for (name <- names){
             for (tupFurToVal <- furnitureToVal){
-                log.info("Setting value ${tupFurToVal._1} tp val ${tupFurToVal._2}")
-                var personPrefSpecific = graph.getVertices("name", name++"Preferences"++tupFurToVal._1).iterator.next   
+                log.info("Setting value " ++ tupFurToVal._1  ++ " to val " ++ tupFurToVal._2.toString)
+                var personPrefSpecific = graph.getVertices("name", tupFurToVal._1).iterator.next   
                 personPrefSpecific.setProperty("value", tupFurToVal._2)
                 graph.commit()
             }
