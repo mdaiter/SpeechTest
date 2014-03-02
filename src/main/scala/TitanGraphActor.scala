@@ -3,7 +3,7 @@ import akka.event.Logging
 import com.thinkaurelius.titan.core.{TitanGraph, TitanVertex, TitanEdge, TitanFactory};
 import org.apache.commons.configuration.BaseConfiguration;
 import org.apache.commons.configuration.Configuration;
-import com.tinkerpop.blueprints.{Edge, Vertex, Graph};
+import com.tinkerpop.blueprints.{Edge, Vertex, Graph, Direction};
 import com.tinkerpop.frames.{FramedTransactionalGraph, FramedGraphFactory}
 import com.tinkerpop.frames.modules.gremlingroovy.GremlinGroovyModule
 import com.tinkerpop.blueprints.util.wrappers.event.EventGraph
@@ -110,6 +110,22 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
             }
         }
     }
+
+    def getPrefs(name : String) : (String, ParVector[String], ParVector[Int])= {
+        log.info("Getting prefs for " ++ name)
+        var personMap : ParHashMap[String, Int] = new ParHashMap[String, Int]
+        val personPrefs : Vertex = graph.getVertices("name", name++"Preferences").iterator.next
+        log.info(personPrefs.toString)
+        for (vertex <- personPrefs.getVertices(Direction.OUT, "prefers").iterator.asScala){
+            val tempInt : Int = vertex.getProperty("value").asInstanceOf[Int]
+            val tempName : String = vertex.getProperty("name").asInstanceOf[String]
+            personMap += (tempName -> tempInt )
+        }
+        val personStrings : ParVector[String] = personMap.keys.toVector.par
+        val personVals : ParVector[Int] = personMap.values.toVector.par
+        log.info("Result from getPrefs: " ++ personVals.toString)
+        return ("house_adjust", personStrings, personVals)
+    }
     def addPerson(name : String) = {
         val newPerson = graph.addVertex(null)
         newPerson.setProperty("name", name)
@@ -137,6 +153,8 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
             sender ! addHormonalData(name, horomone, time, level, instrument)
         case ("set_prefs", names : Any, nameToVal : Any) =>
             setPrefs(names.asInstanceOf[ParVector[String]], nameToVal.asInstanceOf[ParHashMap[String, Int]])
+        case ("get_prefs", name: String) =>
+            sender ! getPrefs(name)
         case _ =>
             log.info("We're being attacked!!!")
     }

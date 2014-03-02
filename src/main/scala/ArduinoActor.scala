@@ -70,9 +70,9 @@ class ArduinoActor(portName : String) extends Actor with akka.actor.ActorLogging
         case ("house_adjust", appliance: String, newVal : Int) =>
             log.info("Received")
             operator ! Write(genJSONSend(appliance, newVal))
-        case ("house_adjust", appliances : ParVector[String], newVals : ParVector[Int]) =>
+        case ("house_adjust", appliances : Any, newVals : Any) =>
             log.info("Received multiple requests to change vals")
-            operator ! Write(genJSONSend(appliances, newVals))
+            operator ! Write(genJSONSend(appliances.asInstanceOf[ParVector[String]], newVals.asInstanceOf[ParVector[Int]]))
         case ("set_prefs", names : ParVector[String]) =>
             log.info("Received request to modify settings for these people: " ++ names.toString)
             val namesJsonArray = new JsonArray()

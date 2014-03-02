@@ -8,6 +8,6 @@ grammar hello;
 
 public <basicCmd> = <command> <endPolite>;
 <command> = <action> <object>;
-<action> = (turn on | turn off | turn up | turn down | save);
-<object> = [my] (light one| light two | preferences);
+<action> = (turn on | turn off | turn up | turn down | save | get);
+<object> = [my | Matt | Dan] (light one| light two | preferences);
 <endPolite> = [thanks | thank you | please];

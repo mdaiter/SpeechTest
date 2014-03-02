@@ -41,7 +41,7 @@ class WitAIActor extends Actor with akka.actor.ActorLogging{
         //Get JSON back
         lastReceivedMessage = lastSentMessage
 
-        implicit val timeout = Timeout(5 seconds)
+        implicit val timeout = Timeout(15 seconds)
         val future = jsonInterpreter ? lastSentMessage
         val result = Await.result(future, timeout.duration)
         println("Result was: " + result)

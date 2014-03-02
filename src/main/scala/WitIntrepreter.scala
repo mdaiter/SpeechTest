@@ -22,6 +22,7 @@ class WitJSONActor extends Actor  with akka.actor.ActorLogging{
         println(entities);
         intent match {
             case "house_adjust" => analyzeHouseAdjust(entities)
+            case "get_prefs" => analyzePrefsGet(entities)
             case "set_prefs" => analyzePrefsSet(entities)
         }
     }
@@ -41,7 +42,16 @@ class WitJSONActor extends Actor  with akka.actor.ActorLogging{
         
         ("house_adjust", appliance, isOnOrOff )
     }
-
+    def analyzePrefsGet(entities : JsonObject) = {
+        val name = if (entities.get("contact").asObject.get("value").asString != null){
+            entities.get("contact").asObject.get("value").asString.head.toUpper.toString ++ entities.get("contact").asObject.get("value").asString.tail
+        } else{null}
+        implicit val timeout = Timeout(3 seconds)
+        val futureGetPrefs = system.actorFor("akka://mySystem/user/TitanActor") ? ("get_prefs", name)
+        val prefs = Await.result(futureGetPrefs, timeout.duration)
+        log.info("Received prefs" ++ prefs.toString)
+        prefs
+    }
     def analyzePrefsSet(entities : JsonObject) = {
         /*val appliance = if (entities.get("appliances").asObject().get("value").asString() != null){
             entities.get("appliances").asObject().get("value").asString
