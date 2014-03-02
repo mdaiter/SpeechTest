@@ -26,5 +26,7 @@ class ArduinoController extends Actor with akka.actor.ActorLogging{
             arduinoSessions.get(attribute).get ! ("house_adjust", attribute, output)
         case ("house_adjust", attributes : ParVector[String], outputs : ParVector[Int]) =>
             attributes.map(x => arduinoSessions.get(x).get ! ("house_adjust", attributes, outputs))
+        case ("set_prefs", names : ParVector[String]) =>
+            arduinoSessions.map(x => arduinoSessions.get(x._1).get ! ("set_prefs", names))
     }
 }

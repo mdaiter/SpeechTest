@@ -3,7 +3,12 @@ import scalaz._, Scalaz._
 import akka.actor.{ActorLogging, Actor}
 import com.eclipsesource.json.JsonObject;
 import akka.util.ByteString
+import akka.util.Timeout
+import scala.concurrent.duration._
+import akka.pattern.ask
+import scala.concurrent.Await
 class WitJSONActor extends Actor  with akka.actor.ActorLogging{
+    import context.system
     def receive = {
         case json : String =>
             sender ! analyze(json)
@@ -38,12 +43,15 @@ class WitJSONActor extends Actor  with akka.actor.ActorLogging{
     }
 
     def analyzePrefsSet(entities : JsonObject) = {
-        val appliance = if (entities.get("appliances").asObject().get("value").asString() != null){
+        /*val appliance = if (entities.get("appliances").asObject().get("value").asString() != null){
             entities.get("appliances").asObject().get("value").asString
         } else {null}
 
         val value : Int = entities.get("level").asObject().get("value").asInt
-
-        ("set_prefs", value, appliance)
+        */
+        implicit val timeout = Timeout(1 seconds)
+        val futureGetName = system.actorFor("akka://mySystem/user/FaceActor") ? "getNames"
+        val faces = Await.result(futureGetName, timeout.duration)
+        ("set_prefs", faces)
     }
 }

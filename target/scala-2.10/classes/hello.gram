@@ -9,5 +9,5 @@ grammar hello;
 public <basicCmd> = <command> <endPolite>;
 <command> = <action> <object>;
 <action> = (turn on | turn off | turn up | turn down | save);
-<object> = [my] (light one| light two | prefs);
+<object> = [my] (light one| light two | preferences);
 <endPolite> = [thanks | thank you | please];

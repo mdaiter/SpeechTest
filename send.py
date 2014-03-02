@@ -1,7 +1,7 @@
 import socket
 import json
 UDP_IP  = "127.0.0.1"
-UDP_PORT = 8002
+UDP_PORT = 8008
 MESSAGE = json.dumps({
         "name" : "chair",
         "typeV" : "furniture",

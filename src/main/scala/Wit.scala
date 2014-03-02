@@ -48,12 +48,6 @@ class WitAIActor extends Actor with akka.actor.ActorLogging{
         
         system.actorFor("akka://mySystem/user/ArduinoController") ! result
 
-       // val futureGetName = system.actorFor("akka://PiSystem/user/FaceActor") ? "name"
-       // val face = Await.result(futureGetName, timeout.duration)
-       // println(face)
-
-        //Modify any values necessary
-
     }
 
     def receive = {

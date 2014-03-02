@@ -8,7 +8,8 @@ import com.tinkerpop.frames.{FramedTransactionalGraph, FramedGraphFactory}
 import com.tinkerpop.frames.modules.gremlingroovy.GremlinGroovyModule
 import com.tinkerpop.blueprints.util.wrappers.event.EventGraph
 import scala.collection.JavaConverters._
-
+import scala.collection.parallel.immutable.{ParVector} 
+import scala.collection.parallel.mutable.{ParHashMap}
 class TitanGraphActor extends Actor with akka.actor.ActorLogging{
     protected val conf : Configuration = new BaseConfiguration();
     protected var graph : TitanGraph = null
@@ -98,7 +99,17 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
             return false
         }
     }
-    
+    def setPrefs(names : ParVector[String], furnitureToVal : ParHashMap[String, Int]) = {
+        log.info("Setting prefs")
+        for (name <- names){
+            for (tupFurToVal <- furnitureToVal){
+                log.info("Setting value ${tupFurToVal._1} tp val ${tupFurToVal._2}")
+                var personPrefSpecific = graph.getVertices("name", name++"Preferences"++tupFurToVal._1).iterator.next   
+                personPrefSpecific.setProperty("value", tupFurToVal._2)
+                graph.commit()
+            }
+        }
+    }
     def addPerson(name : String) = {
         val newPerson = graph.addVertex(null)
         newPerson.setProperty("name", name)
@@ -124,8 +135,9 @@ class TitanGraphActor extends Actor with akka.actor.ActorLogging{
             lookupPersonGroovy(i)
         case ("addHormonalData", name : String, horomone : String, time : Long, level : Float, instrument : String) =>
             sender ! addHormonalData(name, horomone, time, level, instrument)
+        case ("set_prefs", names : Any, nameToVal : Any) =>
+            setPrefs(names.asInstanceOf[ParVector[String]], nameToVal.asInstanceOf[ParHashMap[String, Int]])
         case _ =>
-            sender ! false
-
+            log.info("We're being attacked!!!")
     }
 }

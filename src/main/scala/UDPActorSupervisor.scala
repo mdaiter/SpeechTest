@@ -4,13 +4,6 @@ import akka.actor.ActorSystem
 import akka.actor.Props
 import akka.actor.{OneForOneStrategy}
 import akka.actor.SupervisorStrategy._
-import akka.io.IO
-import akka.io.Udp
-import akka.io.Udp.Bind
-import akka.io.Udp.Bound
-import akka.io.Udp.Received
-import akka.io.Udp.Unbind
-import java.net.InetSocketAddress
 import akka.actor.ActorRef
 import scala.concurrent.duration._
 class UDPActorSupervisor(port : Int, interpreter : ActorRef) extends Actor with akka.actor.ActorLogging{
@@ -20,7 +13,7 @@ class UDPActorSupervisor(port : Int, interpreter : ActorRef) extends Actor with 
             case _ : NullPointerException   => Restart
             case _ : Exception              => Escalate
         }
-    val worker = context.actorOf(Props(new UDPActor(8008, interpreter)))
+    val worker = context.actorOf(Props(new UDPActor(port, interpreter)))
     def receive = {
         case n => worker forward n
     }

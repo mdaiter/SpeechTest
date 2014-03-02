@@ -19,15 +19,19 @@ class TitanActor extends Actor {
 object Main {
     def main(args : Array[String]){
         val system = ActorSystem("mySystem")
-        val micActor = system.actorOf(Props[SpeechActor], "Microphone")
-        val titanGraphActor = system.actorOf(Props[TitanGraphActor], "myGraph")
+        val micActor = system.actorOf(Props[SpeechActorSupervisor], "Microphone")
+        val titanGraphActor = system.actorOf(Props[TitanGraphActor], "TitanActor")
         val witActor = system.actorOf(Props[WitAIActor], "WitAIActor")
-
+        val faceActor = system.actorOf(Props[FaceActorSupervisor], "FaceActor")
+        val udpReceiverActor = system.actorOf(Props(new UDPReceiverSupervisor(faceActor)))
+        val udpActor = system.actorOf(Props(new UDPActorSupervisor(8008, udpReceiverActor)))
         val arduinoControllerActor = system.actorOf(Props[ArduinoControllerActorSupervisor], name="ArduinoController")
-        val arduinoActor = system.actorOf(Props (new ArduinoActorSupervisor("/dev/ttyACM1")))
+        val arduinoActor = system.actorOf(Props (new ArduinoActorSupervisor("/dev/ttyACM0")))
         
         witActor ! micActor
         
+        udpActor ! "connect"
+
         arduinoActor ! ("set_pin", "light one", 8)
         arduinoActor ! ("set_pin", "light two", 9)
 
