@@ -39,6 +39,7 @@ class ArduinoActor(portName : String) extends Actor with akka.actor.ActorLogging
                     log.info("Setting these people: " ++ namesArr.toString ++ " as this: " ++ tmpJson.toString)
                     system.actorFor("akka://mySystem/user/TitanActor") ! ("set_prefs", namesArr, tmpJson)
                     jsonString = ""
+                    jsonString += data.utf8String.substring(data.utf8String.indexOf('}') + 1, data.utf8String.length - 1)
                 }
                 else{
                     jsonString += data.utf8String

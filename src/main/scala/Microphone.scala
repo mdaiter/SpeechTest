@@ -46,12 +46,12 @@ class SpeechActor extends Actor with akka.actor.ActorLogging{
     def loop (sender : ActorRef) = {
         while (true) {
             log.info("Starting to log mic info")
-            //mic.clear
             val result : Result = recognizer.recognize
             if (result != null){
                 val micRead = result.getBestFinalResultNoFiller
                 log.info("Got new mic reading: " ++ micRead)
                 sender ! micRead
+                mic.clear
             }
             else{
                 log.info("I think I misheard you...")
