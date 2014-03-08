@@ -45,11 +45,13 @@ An actor system allows one to keep track of all the actors within a program. Act
 What APIs are you using?
 ----------------------------
 
-1. Wit.AI for the speech interpretation. Works over a REST API. The JSON it sends back contains a value for an intent, and a value (usually a JSON Object) for the entity. The intent displays the purpose of the message, and the entity object shows what objects are contained in the message. Think of an intent as a verb, and the entity message as the direct objects.
+1. [Wit.AI](http://wit.ai) for the speech interpretation. Works over a REST API. The JSON it sends back contains a value for an intent, and a value (usually a JSON Object) for the entity. The intent displays the purpose of the message, and the entity object shows what objects are contained in the message. Think of an intent as a verb, and the entity message as the direct objects.
 
 2. [CMUSphinx4](http://cmusphinx.sourceforge.net/wiki/) for the speech-recognition engine. Instantiates a TargetDataLine, and waits for sound. When a sound hits a threshold, the engine starts recording until it detects a pause. The engine then interprets the sound.
 
 3. [Flow](https://github.com/jodersky/flow) for the Serial communication with the Arduino. Using [Akka](http://akka.io) for the asynchronous receiving method.
+
+4. [Titan](http://thinkaurelius.github.io/titan/) to store attributes and information about people in a logical manner. Discussed in the Titan section of this document.
 
 What are the classes?
 ------------------------
@@ -62,4 +64,8 @@ The classes, as they currently stand, are like this:
 
 3. WitReceiverActor - An actor that interprets a piece of JSON it receives, based on intent and entitiy.
 
-4.
+4. ArduinoControllerActor - Receives requests to turn pins on and off from the WitReceiverActor. It keeps track of which ArduinoActor has which pin attached, and where. Can restart an ArduinoActor if it dies.
+
+5. ArduinoActor - Receives attributes and pins. Can turn on and off pins through Serial.
+
+6. TitanGraphActor - Receives messages for modifying people's attributes. The actor interacts with the graph database in order to 
