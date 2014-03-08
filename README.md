@@ -68,4 +68,10 @@ The classes, as they currently stand, are like this:
 
 5. ArduinoActor - Receives attributes and pins. Can turn on and off pins through Serial.
 
-6. TitanGraphActor - Receives messages for modifying people's attributes. The actor interacts with the graph database in order to 
+6. TitanGraphActor - Receives messages for modifying people's attributes. The actor interacts with the graph database in order to store info received from the Arduino and the Kinect
+
+7. UDPActor - Binds to a UDP port in order to receive messages and send them off to an interpreter.
+
+8. UDPReceiverActor - Interprets JSON messages sent to it through the UDP Actor.
+
+More to come later...Dan wants me to crank this out now.
