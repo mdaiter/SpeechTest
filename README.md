@@ -8,7 +8,6 @@ Hey all! If you're here, it means you're probably working on the project for the
 Let's delve in!
 
 Intro - Actors
-
 --------------------
 
 Actors are the basis of concurrency within the project. They allow one to spawn functions or classes into a self-contained process that acts upon receiving messages. For example, say I have two actors Ping and Pong. Ping can send a message to Pong, and Pong can react to the message in a certain way. Pong can even send a message back to Ping!
@@ -41,5 +40,26 @@ An actor is a class in Scala (the language I'm using for this project. Imagine J
 What's an ActorSystem?
 ----------------------------------
 
-An actor system allows one to keep track of all the actors within a program. Actor systems can be distributed across networks or run on the same machine. It just lets a developer make sure that the actors instantiated in the actor system don't interact with other actors instantiated in other actor systems. For example, I could run two programs that use [Akka] (akka.io) at the same time and be sure that running both won't block each other.
+An actor system allows one to keep track of all the actors within a program. Actor systems can be distributed across networks or run on the same machine. It just lets a developer make sure that the actors instantiated in the actor system don't interact with other actors instantiated in other actor systems. For example, I could run two programs that use [Akka] (http://akka.io) at the same time and be sure that running both won't block each other.
 
+What APIs are you using?
+----------------------------
+
+1. Wit.AI for the speech interpretation. Works over a REST API. The JSON it sends back contains a value for an intent, and a value (usually a JSON Object) for the entity. The intent displays the purpose of the message, and the entity object shows what objects are contained in the message. Think of an intent as a verb, and the entity message as the direct objects.
+
+2. [CMUSphinx4](http://cmusphinx.sourceforge.net/wiki/) for the speech-recognition engine. Instantiates a TargetDataLine, and waits for sound. When a sound hits a threshold, the engine starts recording until it detects a pause. The engine then interprets the sound.
+
+3. [Flow](https://github.com/jodersky/flow) for the Serial communication with the Arduino. Using [Akka](http://akka.io) for the asynchronous receiving method.
+
+What are the classes?
+------------------------
+
+The classes, as they currently stand, are like this:
+
+1. MicrophoneActor - A class that lets the user connect to a microphone on a system using TargetDataLine as it's primary interface
+
+2. WitActor - An actor that can receive a string, send it to [Wit.AI] (http://wit.ai) and send the JSON result to WitReceiverActor, or whatever actor it wants.
+
+3. WitReceiverActor - An actor that interprets a piece of JSON it receives, based on intent and entitiy.
+
+4.
