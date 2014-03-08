@@ -1,3 +1,19 @@
 [0m[[0minfo[0m] [0mRunning Main [0m
-[0m[[0minfo[0m] [0m>Hit here![0m
-[0m[[0minfo[0m] [0m[INFO] [03/04/2014 02:15:57.630] [mySystem-akka.actor.default-dispatcher-3] [akka://mySystem/user/Microphone/$a] Starting to log mic info[0m
+[0m[[0minfo[0m] [0m>[ERROR] [03/06/2014 17:19:49.345] [mySystem-akka.actor.default-dispatcher-4] [akka://mySystem/user/Microphone] 8[0m
+[0m[[0minfo[0m] [0mjava.lang.ArrayIndexOutOfBoundsException: 8[0m
+[0m[[0minfo[0m] [0m	at edu.cmu.sphinx.frontend.util.Microphone.getSelectedMixer(Microphone.java:294)[0m
+[0m[[0minfo[0m] [0m	at edu.cmu.sphinx.frontend.util.Microphone.getAudioLine(Microphone.java:328)[0m
+[0m[[0minfo[0m] [0m	at edu.cmu.sphinx.frontend.util.Microphone.open(Microphone.java:359)[0m
+[0m[[0minfo[0m] [0m	at edu.cmu.sphinx.frontend.util.Microphone.startRecording(Microphone.java:435)[0m
+[0m[[0minfo[0m] [0m	at SpeechActor.SpeechActor$$start(Microphone.scala:21)[0m
+[0m[[0minfo[0m] [0m	at SpeechActor$$anonfun$receive$1.applyOrElse(Microphone.scala:63)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:498)[0m
+[0m[[0minfo[0m] [0m	at akka.actor.ActorCell.invoke(ActorCell.scala:456)[0m
+[0m[[0minfo[0m] [0m	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:237)[0m
+[0m[[0minfo[0m] [0m	at akka.dispatch.Mailbox.run(Mailbox.scala:219)[0m
+[0m[[0minfo[0m] [0m	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386)[0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)[0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)[0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)[0m
+[0m[[0minfo[0m] [0m	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)[0m
+[0m[[0minfo[0m] [0m[0m

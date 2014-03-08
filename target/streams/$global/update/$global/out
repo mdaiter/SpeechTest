@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/msd/Code/testScala/}testscala...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/msd/Code/SpeechTest/}speechtest...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: testscala#testscala_2.10;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for testscala#testscala_2.10;1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e280c42[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c45a3ad[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -394,9 +394,19 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.2[0m
-[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.10.2[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scala-lang/scala-reflect/2.10.2/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-reflect;2.10.2[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-reflect;2.10.2[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom (2.10.2)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.2!scala-reflect.pom(pom.original) (258ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/msd/.ivy2/local/org.scala-lang/scala-reflect/2.10.2/jars/scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.jar[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.2 in public[0m
 [0m[[0mdebug[0m] [0m	[2.10.2] org.scala-lang#scala-reflect;2.10.2[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
@@ -772,7 +782,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->com.tinkerpop#frames;2.4.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->com.typesafe.akka#akka-actor_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@282cbdee[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26f1e633[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.10;2.2.3 in sbt-chain[0m
@@ -863,7 +873,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->com.datastax.cassandra#cassandra-driver-core;2.0.0-rc2 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->com.typesafe.akka#akka-slf4j_2.10;2.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-slf4j_2.10;2.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@720c7cd0[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77767241[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-slf4j_2.10;2.2.3[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-slf4j_2.10;2.2.3 in sbt-chain[0m
@@ -4216,7 +4226,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies testscala#testscala_2.10;1.0->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/msd/Code/testScala/target/resolution-cache/testscala/testscala_2.10/1.0/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/msd/Code/SpeechTest/target/resolution-cache/testscala/testscala_2.10/1.0/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.michaelpollmeier#gremlin-scala;2.4.1!gremlin-scala.jar[0m
@@ -4292,19 +4302,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.3!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3922ms :: artifacts dl 84ms[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 compile produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 runtime produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 test produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 provided produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 optional produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 compile-internal produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 runtime-internal produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 test-internal produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 plugin produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 sources produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 docs produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 pom produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 scala-tool produced in /home/msd/Code/testScala/target/resolution-cache/reports/testscala-testscala_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3922ms resolve - 84ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2364ms :: artifacts dl 54ms[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 compile produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 runtime produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 test produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 provided produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 optional produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 compile-internal produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 runtime-internal produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 test-internal produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 plugin produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 sources produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 docs produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 pom produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for testscala#testscala_2.10;1.0 scala-tool produced in /home/msd/Code/SpeechTest/target/resolution-cache/reports/testscala-testscala_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2364ms resolve - 54ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

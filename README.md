@@ -26,7 +26,7 @@ Actors allow us to design a modular system to run across a network. Why would we
 What should an actor look like?
 -------------------------------------------
 
-An actor is a class in Scala (the language I'm using for this project. Imagine Java, but cooler). It extends the class Actor in [Akka] (akka.io). You should look at their tutorial documents in order to learn the proper creation of actors in the Akka system, as they do a much better job of explaining their own system than I could. However, I will say this: you 
+An actor is a class in Scala (the language I'm using for this project. Imagine Java, but cooler). It extends the class Actor in [Akka] (http://www.akka.io). You should look at their tutorial documents in order to learn the proper creation of actors in the Akka system, as they do a much better job of explaining their own system than I could. However, I will say this: you 
     1. Extend an Actor to your class
     2. Add in private variables and definitions in order to maintain terseness of your code
     3. Make sure most---if not all---of the variables in your class are vals (think final variables in Java)
