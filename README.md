@@ -74,4 +74,46 @@ The classes, as they currently stand, are like this:
 
 8. UDPReceiverActor - Interprets JSON messages sent to it through the UDP Actor.
 
-More to come later...Dan wants me to crank this out now.
+How does the flow of the program work?
+----------------------------------------
+
+All of the classes above are instantiated in a main method. The MicrophoneActor becomes bound to a microphone. The WitActor and WitReceiverActor become ready to serve and receive requests to and from, respectively, [Wit.AI](http://wit.ai). The ArduinoControllerActor starts up, ready to receive strings corresponding to Arduinos. A spawn of ArduinoActors come online, each binding to a serial port on the computer. The ArduinoActors are sent to the ArduinoControllerActor, with a corresponding attribute (light one, light two, etc.). The TitanGraphActor (or actors, how ever many you decide to spawn off) bind(s) to the graph database. The UDPActor(s) and UDPReceiverActor(s) bind to the UDPActors, ready to interpret messages sent. The actor system comes alive.
+
+Also, the C++ code for the facial recognition code binds to a UDP port and starts broadcasting JSON about its position, its name in the system, and how many faces it has detected. Each face object contains a name and an X- and Y-coordinate for the position within the room. Th UDPActor will start to receive JSON requests, and will forward whatever it receives to the UDPReceiverActor. The purpose of this is to de-couple the UDPActor (the binding logic) from the UDPReceiverActor (the interpretation code).
+
+The MicrophoneActor will bind to a TargetDataLine (an input class in Java, so we don't need to deal with any ALSA lib logic) and start to listen for interrupts. Once an interrupt is received, the MicrophoneActor will interpret the sound, construct a string out of it based on the vocabulary words it has recorded within the src/main/resources/hello.gram file, and send it to the WitActor. The WitActor receives a string and sends it to the [Wit.AI](http://wit.ai) service and waits for a response. On response, the WitActor sends the response to the WitReceiverActor. The WitReceiverActor interprets the intention based on the JSON received. Based on intention, the WitReceiverActor parses the JSON and sends the entities and intention to either the TitanGraphActor or directly to the ArduinoControllerActor.
+
+If the intention is sent directly to the ArduinoControllerActor, the ArduinoControllerActor will parse the message and send it to the appropriate actors within its knowledge, with commands to set pins to values. For example, "Turn on light one" could result in the ArduinoController sending a message to the ArduinoActor managing "light one", telling it to set the output to the "light one" to 1, or on.
+
+If the intention is sent to the TitanGraphActor, it usually will be a command pertaining to the database. For example, if I say for the system to "save matt's preferences", the WitReceiverActor can send the intention and entities to the TitanGraphActor. The TitanGraphActor can lookup "matt" within the current database. If "matt" is nonexistant, an error will be thrown. In the future, we should change this to adding a new user (I've already created the function). If "matt" is existant, then the TitanGraphActor will send a message to the ArduinoControllerActor to retrieve every value of every input pin. Once the pin values and names corresponsing to pin values are retrieved, the TitanGraphActor will store these values within the database.
+
+Through actors, we can interact with the database or the Arduinos asynchronously.
+
+How is the graph database organized?
+---------------------------------------
+Basic information: every node in the system contains a name and type string value.
+
+The database is organized like this:
+
+1. Everything is a node within a graph. There are vertices and edges. Vertices and edges can have properties: attributes corresponding to values.
+
+2. The graph database consists mainly of people nodes, furniture nodes, and timevalue nodes.
+
+3. The people nodes connect to people-base nodes. People-base nodes are nodes that serve as an entry to corresponding time-values or preferences. For example: a person node with name Matt may have a MattPreferencesBase node connected to it. All of Matt's preferences are connected to MattPreferencesBase. These base nodes serve to speed up lookup times of preferences.
+
+4. Each person has a PreferencesBaseNode, a WeightBaseNode, and a number of other BaseNodes.
+
+5. To access a BaseNode, you must lookup the person in the graph first. Once a person vertex is found, you must search for the nodes connected to the person vertex for your requested node. If you're trying to modify the Preferences, for example, you would search for the MattPreferencesBaseNode. All BaseNodes have the formatting [nameOfPerson][attributeOfPersonSearchedFor][Base].
+
+6. Every BaseNode has a number of timevalues attached to it. TimeVals refer to a value of an attribute, taken at a tinme. For example, if I were searching for Matt's preferences for "light one", I would search for Matt's vertex. Then, I would search for MattPreferencesBase's vertex. Then, I would search through the connected vertices for light one's current value. I would then proceed to change the value of light one's preference for Matt, and save the changes by sending a commit to the graph (called by graph.commit()).
+
+7. The furniture vertices connect to time values, allowing you to search for all preferences branching out of a piece of furniture. For example, let's say I have a vertex named couch2. I can search for the couch2 vertex, and search for the outgoing vertices out of couch2. I can compare preferences for couch2 between users.
+
+I hope that clarified the operation of the graph database.
+
+Updating the code
+--------------------
+
+If you ever want to add to the code, MAKE SURE YOUR CODE USES ONLY ACTORS. That way, we can instantiate the actor without messing up the operation of other actors running in the system.
+
+Thanks so much for reading this.
